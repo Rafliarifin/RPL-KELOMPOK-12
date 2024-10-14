@@ -8,6 +8,8 @@ use App\Http\Controllers\HomeController;
 // Menampilkan halaman home dari views/home.blade.php
 Route::get('/', [HomeController::class, 'index'])->name('home');
 
+
+
 // Route untuk controller CarController
 Route::get('/cars', [CarController::class, 'index'])->name('cars.index');
 Route::get('/cars/{car}', [CarController::class, 'show'])->name('cars.show');
