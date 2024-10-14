@@ -1,0 +1,108 @@
+/* app.css */
+body {
+    overflow: hidden; /* Menghilangkan scrollbar */
+}
+
+/* Warna latar belakang bagian atas (navbar) */
+.bg-dark {
+    background-color: #254336; /* Warna gelap */
+}
+
+/* Warna latar belakang bagian utama */
+.bg-primary {
+    background-image: url('/images/background.jpg'); /* Menggunakan gambar dari folder public */
+    background-color: #000000; /* Warna fallback jika gambar tidak muncul */
+    background-size: cover; /* Membuat gambar menutupi seluruh area */
+    background-position: center; /* Gambar di tengah */
+    background-repeat: no-repeat; /* Tidak mengulang gambar */
+    min-height: 89vh;
+}
+
+.bg-primary2 {
+    background-color: #000000; /* Warna utama seperti yang terlihat pada gambar */
+    min-height: 90vh;
+}
+
+
+/* Styling untuk teks di bagian konten utama */
+.text-dark {
+    color: #ffffff; /* Warna teks seperti yang terlihat pada gambar */
+}
+
+/* Utility classes untuk margin dan padding */
+.py-12 {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+}
+
+.py-24 {
+    padding-top: 6rem;
+    padding-bottom: 6rem;
+}
+
+.mb-4 {
+    margin-bottom: 1rem;
+}
+
+
+.bg-white {
+    color: #000000;
+}
+
+/* pembaruan */
+.feature i {
+    transition: transform 0.3s ease, color 0.3s ease; /* Menambahkan transisi */
+}
+
+.feature:hover i {
+    transform: scale(1.2); /* Memperbesar ikon saat hover */
+    color: #fdfac7; /* Ganti dengan warna yang diinginkan saat hover */
+}
+
+
+.nav-icon {
+    transition: transform 0.3s ease, color 0.3s ease; /* Menambahkan transisi */
+}
+
+.nav-icon:hover {
+    transform: scale(1.5); /* Memperbesar ikon saat hover */
+    color: #fdfac7; /* Ganti dengan warna yang diinginkan saat hover */
+}
+.btn-secondary {
+    background-color: #641302  ; /* Warna sama dengan bagian atas */
+    color: #000a17;
+    transition: background-color 0.3s ease;
+    transition: transform 0.3s ease, background-color 0.3s ease; /* Transisi untuk efek animasi */
+}
+.btn-secondary:hover {
+    transform: scale(1.5); /* Memperbesar tombol sedikit saat hover */
+    background-color: #fdfac7; /* Ganti warna latar belakang saat hover (ganti sesuai kebutuhan) */
+}
+
+/* tabel css */
+
+.table-container {
+    max-width: 1200px; /* Batasan lebar tabel */
+    margin: 0 auto; /* Menempatkan tabel di tengah */
+    border: 1px solid #ddd; /* Warna border */
+}
+
+.action-button {
+    background-color: #800000;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.action-button i {
+    margin-right: 5px;
+}
+
+.action-button:hover {
+    background-color: #cc0000; /* Warna lebih terang saat hover */
+    transform: scale(1.05); /* Sedikit memperbesar tombol saat hover */
+}
