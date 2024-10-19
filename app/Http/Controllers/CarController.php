@@ -18,4 +18,3 @@ class CarController extends Controller
         return view('cars.show', compact('car'));
     }
 }
-// halo
