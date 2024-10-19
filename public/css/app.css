@@ -3,11 +3,6 @@ body {
     overflow: hidden; /* Menghilangkan scrollbar */
 }
 
-/* Warna latar belakang bagian atas (navbar) */
-.bg-dark {
-    background-color: #254336; /* Warna gelap */
-}
-
 /* Warna latar belakang bagian utama */
 .bg-primary {
     background-image: url('/images/background.jpg'); /* Menggunakan gambar dari folder public */
@@ -20,7 +15,7 @@ body {
 
 .bg-primary2 {
     background-color: #000000; /* Warna utama seperti yang terlihat pada gambar */
-    min-height: 90vh;
+    min-height: 95vh;
 }
 
 
@@ -82,9 +77,9 @@ body {
 /* tabel css */
 
 .table-container {
-    max-width: 1200px; /* Batasan lebar tabel */
+    max-width: 1300px; /* Batasan lebar tabel */
     margin: 0 auto; /* Menempatkan tabel di tengah */
-    border: 1px solid #ddd; /* Warna border */
+    border: 1px solid #dddddd; /* Warna border */
 }
 
 .action-button {
@@ -104,5 +99,5 @@ body {
 
 .action-button:hover {
     background-color: #cc0000; /* Warna lebih terang saat hover */
-    transform: scale(1.05); /* Sedikit memperbesar tombol saat hover */
+    transform: scale(1.1); /* Sedikit memperbesar tombol saat hover */
 }
