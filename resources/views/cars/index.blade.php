@@ -18,7 +18,7 @@
                         <h2 class="text-xl font-semibold mb-2">{{ $car->name }}</h2>
                         <p class="text-gray-600 mb-4">Harga per hari: Rp.{{ number_format($car->price_per_day, 2) }}</p>
                         <p class="text-gray-600 mb-4">Stok: {{ $car->stock }}</p>
-                        <a href="{{ route('rentals.create', ['car_id' => $car->id]) }}" class="bg-red-500 text-white px-4 py-2 rounded hover:bg-red-900">Pesan sekarang</a>
+                        <a href="{{ route('rentals.create', ['car_id' => $car->id]) }}" class="action-button">Pesan sekarang</a>
                     </div>
                 @endif
             @endforeach

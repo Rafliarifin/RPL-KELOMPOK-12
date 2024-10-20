@@ -24,28 +24,35 @@
         </div>
 
         <!-- Navigasi di kanan -->
+         
         <div>
-
-            <ul class="flex space-x-20">            
+            <ul class="flex space-x-20"> 
+            @if(request()->is('admin*'))
+    <li>
+        <a href="{{ route('admin.cars.index') }}" 
+            class="text-white text-2xl font-bold" style="color: #EEEBDD">
+        </a>
+    </li>
+@endif           
                 <li>
                     <a href="{{ route('home') }}" 
                         class="text-white text-2xl font-bold"style="color: #EEEBDD "
                         style="font-family: 'Comic Sans MS', cursive, sans-serif;">
-                        <i class="fas fa-home nav-icon mr-2"></i> Home
+                        <i class="fas fa-home nav-icon mr-2"></i> Beranda
                     </a>
                 </li>
                 <li>
                     <a href="{{ route('cars.index') }}" 
                         class="text-white text-2xl font-bold"style=" color: #EEEBDD "
                         style="font-family: 'Comic Sans MS', cursive, sans-serif;">
-                        <i class="fas fa-car nav-icon mr-2"></i> List Mobil
+                        <i class="fas fa-car nav-icon mr-2"></i> Daftar Mobil
                     </a>
                 </li>
                 <li>
                     <a href="{{ route('rentals.index') }}" 
                         class="text-white text-2xl font-bold"style=" color: #EEEBDD " 
                         style="font-family: 'Comic Sans MS', cursive, sans-serif;">
-                        <i class="fas fa-shopping-cart nav-icon mr-2"></i> Order
+                        <i class="fas fa-shopping-cart nav-icon mr-2"></i> Pesanan
                     </a>
                 </li>
             </ul>

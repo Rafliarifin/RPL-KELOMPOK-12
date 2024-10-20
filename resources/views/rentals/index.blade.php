@@ -10,13 +10,13 @@
 <table class="bg-white shadow-md rounded-lg overflow-hidden table-container" style="background-color: #fdfac7; border: 1px solid #ccc;">
     <thead style="background-color: #800000; color: white;"> <!-- Warna merah maroon di header -->
         <tr>
-            <th class="py-2 px-4 text-left" style="border: 1px solid #ccc;">Name</th>
-            <th class="py-2 px-4 text-left" style="border: 1px solid #ccc;">Phone</th>
+            <th class="py-2 px-4 text-left" style="border: 1px solid #ccc;">Nama</th>
+            <th class="py-2 px-4 text-left" style="border: 1px solid #ccc;">No.Hp</th>
             <th class="py-2 px-4 text-left" style="border: 1px solid #ccc;">Email</th>
-            <th class="py-2 px-4 text-left" style="border: 1px solid #ccc;">Car</th>
-            <th class="py-2 px-4 text-left" style="border: 1px solid #ccc;">Duration</th>
-            <th class="py-2 px-4 text-left" style="border: 1px solid #ccc;">Total Price</th>
-            <th class="py-2 px-4 text-left" style="border: 1px solid #ccc;">Actions</th>
+            <th class="py-2 px-4 text-left" style="border: 1px solid #ccc;">Mobil</th>
+            <th class="py-2 px-4 text-left" style="border: 1px solid #ccc;">Durasi</th>
+            <th class="py-2 px-4 text-left" style="border: 1px solid #ccc;">Total Harga</th>
+            <th class="py-2 px-4 text-left" style="border: 1px solid #ccc;">Aksi</th>
         </tr>
     </thead>
     <tbody>
@@ -39,7 +39,7 @@
                         @csrf
                         @method('DELETE')
                         <button type="submit" class="action-button" onclick="return confirm('Anda yakin ingin menghapus data?')">
-                            <i class="fas fa-trash"></i> Delete
+                            <i class="fas fa-trash"></i> Hapus
                         </button>
                     </form>
 
