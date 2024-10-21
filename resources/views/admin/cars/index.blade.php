@@ -14,7 +14,7 @@
             @csrf
             <button type="submit" class="action-button" style="margin-left: 1300px; height: 40px">Logout</button>
         </form>
-        <a href="{{ route('admin.cars.create') }}" class="action-button">Add New Car</a>
+        <a href="{{ route('admin.cars.create') }}" class="action-button">Tambah mobil</a>
     </div>
 
     @if(session('success'))
