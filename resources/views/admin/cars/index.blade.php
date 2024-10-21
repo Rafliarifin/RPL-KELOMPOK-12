@@ -9,12 +9,12 @@
 
 <div class="container mx-auto px-4 py-8">
 <h1 class="text-3xl font-bold mb-2 text-center" style="color: #fdfac7;font-family:'poppins'"; >Kelola Mobil</h1>
-    <div class="flex justify-between items-center mb-6">
+    <div class="flex justify-between items-center mb-6 text-center">
         <form action="{{ route('admin.logout') }}" method="POST" class="inline">
             @csrf
-            <button type="submit" class="action-button" style="margin-left: 1300px; height: 40px">Logout</button>
+            <button type="submit" class="action-button " style="margin-left: 650px; height: 40px">Logout</button>
         </form>
-        <a href="{{ route('admin.cars.create') }}" class="action-button">Tambah mobil</a>
+        <a href="{{ route('admin.cars.create') }}" class="action-button" style="margin-right: 650px; height: 40px">Tambah mobil</a>
     </div>
 
     @if(session('success'))
