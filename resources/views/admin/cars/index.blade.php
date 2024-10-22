@@ -17,11 +17,30 @@
         <a href="{{ route('admin.cars.create') }}" class="action-button" style="margin-right: 650px; height: 40px">Tambah mobil</a>
     </div>
 
-    @if(session('success'))
-        <div class="bg-green-100 border border-black-400 text-green-700 px-4 py-3 rounded mb-4">
-            {{ session('success') }}
-        </div>
+    @if(session('error'))
+    <div class="border border-red-400 text-red-700 px-4 py-3 rounded-lg relative mb-4 shadow-lg" role="alert">
+        <strong class="font-bold"><i class="fas fa-exclamation-circle"></i> Error:</strong>
+        <span class="block sm:inline">{{ session('error') }}</span>
+        <span class="absolute top-0 bottom-0 right-0 px-4 py-3">
+            <svg class="fill-current h-6 w-6 text-red-500" role="button" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" onclick="this.parentElement.parentElement.style.display='none'">
+                <path d="M14.348 14.849a1 1 0 01-1.414 0L10 11.414l-2.934 2.935a1 1 0 01-1.414-1.414L8.586 10 5.652 7.066a1 1 0 011.414-1.414L10 8.586l2.934-2.935a1 1 0 011.414 1.414L11.414 10l2.934 2.935a1 1 0 010 1.414z"/>
+            </svg>
+        </span>
+    </div>
     @endif
+
+    @if(session('success'))
+    <div class="border border-green-400 text-green-700 px-4 py-3 rounded-lg relative mb-4 shadow-lg" role="alert">
+        <strong class="font-bold"><i class="fas fa-exclamation-circle"></i> Success:</strong>
+        <span class="block sm:inline">{{ session('success') }}</span>
+        <span class="absolute top-0 bottom-0 right-0 px-4 py-3">
+            <svg class="fill-current h-6 w-6 text-red-500" role="button" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" onclick="this.parentElement.parentElement.style.display='none'">
+                <path d="M14.348 14.849a1 1 0 01-1.414 0L10 11.414l-2.934 2.935a1 1 0 01-1.414-1.414L8.586 10 5.652 7.066a1 1 0 011.414-1.414L10 8.586l2.934-2.935a1 1 0 011.414 1.414L11.414 10l2.934 2.935a1 1 0 010 1.414z"/>
+            </svg>
+        </span>
+    </div>
+    @endif
+
 
     <!-- Container with scroll -->
     <div class="bg-white shadow-md rounded-lg overflow-hidden table-container" style="background-color: #fdfac7; border: 1px solid #ccc; max-width: 1000px;"> <!-- Membatasi lebar tabel -->

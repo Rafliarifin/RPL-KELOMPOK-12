@@ -46,7 +46,7 @@ class AdminCarController extends Controller
             'image_path' => 'images/' . $imageName // Simpan path relatif
         ]);
 
-        return redirect()->route('admin.cars.index')->with('success');
+        return redirect()->route('admin.cars.index')->with('success', 'mobil berhasil ditambah');
     }
 
     public function update(Request $request, Car $car)
@@ -81,7 +81,7 @@ class AdminCarController extends Controller
     {
         // Cek apakah ada rental yang terkait dengan mobil
         if ($car->rentals()->count() > 0) {
-            return redirect()->route('admin.cars.index')->withErrors('Cannot delete car with existing rentals.');
+            return redirect()->route('admin.cars.index')->with('error','Tidak bisa mengahpus mobil yang sedang disewa');
         }
 
         // Hapus gambar terkait jika ada
@@ -92,7 +92,7 @@ class AdminCarController extends Controller
         // Hapus mobil
         $car->delete();
 
-        return redirect()->route('admin.cars.index')->with('success');
+        return redirect()->route('admin.cars.index')->with('success','mobil berhasil dihapus');
     }
 }
 
