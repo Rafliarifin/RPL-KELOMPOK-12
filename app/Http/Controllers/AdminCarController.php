@@ -74,7 +74,7 @@ class AdminCarController extends Controller
 
         $car->update($validated);
 
-        return redirect()->route('admin.cars.index')->with('success');
+        return redirect()->route('admin.cars.index')->with('success','mobil berhasil diupdate');
     }
 
     public function destroy(Car $car)
