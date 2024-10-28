@@ -43,7 +43,7 @@
 
 
     <!-- Container with scroll -->
-    <div class="bg-white shadow-md rounded-lg overflow-hidden table-container" style="background-color: #fdfac7; border: 1px solid #ccc; max-width: 1000px;"> <!-- Membatasi lebar tabel -->
+    <div class="shadow-md rounded-lg overflow-hidden table-container" style="background-color: #fdfac7; border: 1px solid #ccc; max-width: 1000px;"> <!-- Membatasi lebar tabel -->
     <div class="overflow-y-auto" style="max-height: 550px;"> <!-- Tambahkan scrollbar pada tabel -->
         <table class="min-w-full" style="border-collapse: collapse; table-layout: fixed; width: 100%;"> <!-- Menetapkan lebar tabel ke 100% -->
             <thead style="background-color: #800000; color: white;">

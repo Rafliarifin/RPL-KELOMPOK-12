@@ -18,18 +18,7 @@ body {
     min-height: 95vh;
 }
 
-
-/* Styling untuk teks di bagian konten utama */
-.text-dark {
-    color: #ffffff; /* Warna teks seperti yang terlihat pada gambar */
-}
-
 /* Utility classes untuk margin dan padding */
-.py-12 {
-    padding-top: 3rem;
-    padding-bottom: 3rem;
-}
-
 .py-24 {
     padding-top: 6rem;
     padding-bottom: 6rem;
@@ -39,10 +28,6 @@ body {
     margin-bottom: 1rem;
 }
 
-
-.bg-white {
-    color: #000000;
-}
 
 /* pembaruan */
 .feature i {

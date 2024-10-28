@@ -6,8 +6,8 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <br>
-<h1 class="text-3xl font-bold mb-8 text-center" style="color: #fdfac7;font-family:'poppins'"; >Rental List</h1>
-<table class="bg-white shadow-md rounded-lg overflow-hidden table-container" style="background-color: #fdfac7; border: 1px solid #ccc;">
+<h1 class=" text-3xl font-bold mb-8 text-center" style="color: #fdfac7;font-family:'poppins'"; >Rental List</h1>
+<table class="shadow-md rounded-lg overflow-hidden table-container" style="background-color: #fdfac7; border: 1px solid #ccc;">
     <thead style="background-color: #800000; color: white;"> <!-- Warna merah maroon di header -->
         <tr>
             <th class="py-2 px-4 text-left" style="border: 1px solid #ccc;">Nama</th>

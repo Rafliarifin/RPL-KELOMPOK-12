@@ -8,7 +8,7 @@
         <div class="container mx-auto text-center">
             <h1 class="text-3xl font-bold  mb-4" style="color: #fdfac7 ;font-family: 'poppins'";>Jasa Rental Mobil Online</h1><br><br>
             <a href="{{ route('cars.index') }}" class="btn btn-secondary text-lg font-bold py-5 px-9 rounded-lg">Pesan Sekarang</a><br><br><br><br><br><br><br><br><br><br><br>
-            <p class="text-2xl font-semibold text-dark" style="font-family: 'Comic Sans MS', cursive, sans-serif;">"Nikmati Kemudahan Menyewa Mobil Dengan Layanan Kami"</p><br><br>
+            <p class="text-2xl font-semibold text-white" style="font-family: 'Comic Sans MS', cursive, sans-serif;">"Nikmati Kemudahan Menyewa Mobil Dengan Layanan Kami"</p><br><br>
 
         </div>
         
