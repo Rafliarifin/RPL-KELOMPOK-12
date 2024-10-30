@@ -91,6 +91,6 @@ body {
 }
 
 .action-button:hover {
-    background-color: #ede7e7; /* Warna lebih terang saat hover */
+    background-color: #d11111; /* Warna lebih terang saat hover */
     transform: scale(1.1); /* Sedikit memperbesar tombol saat hover */
 }
