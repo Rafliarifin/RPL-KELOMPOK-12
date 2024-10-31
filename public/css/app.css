@@ -3,11 +3,6 @@ body {
     overflow: hidden; /* Menghilangkan scrollbar */
 }
 
-/* Warna latar belakang bagian atas (navbar) */
-.bg-dark {
-    background-color: #254336; /* Warna gelap */
-}
-
 /* Warna latar belakang bagian utama */
 .bg-primary {
     background-image: url('/images/background.jpg'); /* Menggunakan gambar dari folder public */
@@ -20,21 +15,10 @@ body {
 
 .bg-primary2 {
     background-color: #000000; /* Warna utama seperti yang terlihat pada gambar */
-    min-height: 90vh;
-}
-
-
-/* Styling untuk teks di bagian konten utama */
-.text-dark {
-    color: #ffffff; /* Warna teks seperti yang terlihat pada gambar */
+    min-height: 95vh;
 }
 
 /* Utility classes untuk margin dan padding */
-.py-12 {
-    padding-top: 3rem;
-    padding-bottom: 3rem;
-}
-
 .py-24 {
     padding-top: 6rem;
     padding-bottom: 6rem;
@@ -44,10 +28,6 @@ body {
     margin-bottom: 1rem;
 }
 
-
-.bg-white {
-    color: #000000;
-}
 
 /* pembaruan */
 .feature i {
@@ -82,9 +62,9 @@ body {
 /* tabel css */
 
 .table-container {
-    max-width: 1200px; /* Batasan lebar tabel */
+    max-width: 1300px; /* Batasan lebar tabel */
     margin: 0 auto; /* Menempatkan tabel di tengah */
-    border: 1px solid #ddd; /* Warna border */
+    border: 1px solid #dddddd; /* Warna border */
 }
 
 .action-button {
@@ -97,12 +77,20 @@ body {
     align-items: center;
     transition: background-color 0.3s ease, transform 0.3s ease;
 }
+.p-4{
+    display: flex;
+    align-items: center;
+}
+.p-40{
+    padding: 10px;
+    align-items: center;
+}
 
 .action-button i {
     margin-right: 5px;
 }
 
 .action-button:hover {
-    background-color: #cc0000; /* Warna lebih terang saat hover */
-    transform: scale(1.05); /* Sedikit memperbesar tombol saat hover */
+    background-color: #d11111; /* Warna lebih terang saat hover */
+    transform: scale(1.1); /* Sedikit memperbesar tombol saat hover */
 }

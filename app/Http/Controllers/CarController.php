@@ -13,8 +13,4 @@ class CarController extends Controller
         return view('cars.index', compact('cars'));
     }
 
-    public function show(Car $car)
-    {
-        return view('cars.show', compact('car'));
-    }
 }
